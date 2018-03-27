@@ -1,0 +1,21 @@
+{
+  "env": {
+    "es6": true,
+    "jest": true,
+    "browser": false
+  },
+  "parser": "babel-eslint",
+  "plugins": ["import", "jsx-a11y", "react"],
+  "extends": [
+    "airbnb-base",
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:import/react",
+    "plugin:import/recommended"
+  ],
+  "rules": {
+    "object-curly-spacing": "off",
+    "import/prefer-default-export": "off",
+    "arrow-parens": "off"
+  }
+}

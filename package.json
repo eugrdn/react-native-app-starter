@@ -1,0 +1,76 @@
+{
+  "name": "react-native-app-starter",
+  "version": "0.0.1",
+  "description": "React-native app starter",
+  "repository": "https://github.com/eugrdn/react-native-app-starter.git",
+  "author": "Eugene Rodin",
+  "scripts": {
+    "preinstall": "chmod -R +rwx ./common/scripts",
+    "postinstall": "./common/scripts/gql-gen.sh",
+    "android": "./common/scripts/android.sh",
+    "ios": "./common/scripts/ios.sh",
+    "tsc": "./common/scripts/tsc.sh",
+    "watch": "./common/scripts/watch.sh",
+    "gql-gen": "./common/scripts/gql-gen.sh",
+    "start": "./common/scripts/start.sh",
+    "build": "./common/scripts/build.sh",
+    "clean": "./common/scripts/clean.sh",
+    "lint": "./common/scripts/lint.sh",
+    "test": "./common/scripts/test.sh"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "1.1.5",
+    "apollo-client": "2.2.0",
+    "apollo-link": "1.2.1",
+    "apollo-link-context": "1.0.7",
+    "apollo-link-http": "1.3.2",
+    "graphql": "0.12.3",
+    "graphql-tag": "2.6.1",
+    "ramda": "0.25.0",
+    "react": "16.2.0",
+    "react-apollo": "2.0.4",
+    "react-native": "0.52.1",
+    "react-native-router-flux": "4.0.0-beta.28",
+    "react-navigation": "1.0.0-beta.27"
+  },
+  "devDependencies": {
+    "@types/jest": "22.1.0",
+    "@types/ramda": "0.25.16",
+    "@types/react": "16.0.35",
+    "@types/react-native": "0.52.5",
+    "@types/react-test-renderer": "16.0.0",
+    "babel-eslint": "8.2.1",
+    "babel-jest": "22.1.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "4.16.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.5.1",
+    "graphql-code-generator": "0.8.14",
+    "jest": "22.1.4",
+    "react-test-renderer": "16.2.0",
+    "rimraf": "2.6.2",
+    "ts-jest": "22.0.1",
+    "tslint": "5.9.1",
+    "tslint-eslint-rules": "4.1.1",
+    "tslint-react": "3.4.0",
+    "typescript": "2.6.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
