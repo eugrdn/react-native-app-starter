@@ -120,7 +120,6 @@ class SignInScreen extends React.Component<SignInProps, SignInState> {
 
         return (
             <View style={styles.container}>
-                <Loader />
                 {data && data.loading ? <Loader /> : this.renderContent()}
             </View>
         );
